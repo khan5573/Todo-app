@@ -1,0 +1,184 @@
+/* ================= COMMON ================= */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+}
+
+/* ================= LOGIN PAGE ================= */
+body.login-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* ================= REGISTER PAGE ================= */
+body.register-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+/* ================= LOGIN / REGISTER BOX ================= */
+.box {
+  width: 340px;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  backdrop-filter: blur(5px);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+/* Login button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+/* Register button */
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+}
+
+#msg {
+  margin-top: 10px;
+  color: red;
+}
+
+/* ================= TODO PAGE ================= */
+body.todo-bg {
+  background: linear-gradient(135deg, #73a9b8, #062041);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.todo-container {
+  width: 450px;
+  background: #eae4e4;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(18, 5, 5, 0.2);
+  text-align: center;
+}
+
+/* Heading */
+.todo-container h1 {
+  margin-bottom: 15px;
+  color: #190349;
+}
+
+/* Logout */
+.logout-btn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+/* Input */
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #dcd7d7;
+}
+
+/* Add button (FIXED) */
+.add-btn {
+  padding: 10px 15px;
+  background: linear-gradient(135deg, #828484, #365109);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+/* List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #d5c0c0;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Button container FIX */
+li div {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+/* Base button style */
+li button {
+  border: none;
+  color: rgb(116, 23, 23);
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 6px 10px;
+  min-width: 60px;
+  text-align: center;
+}
+
+/* Edit button FIX */
+.edit-btn {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+/* Delete button FIX */
+.delete-btn {
+  background: linear-gradient(135deg, #4a140e, #611609);
+}

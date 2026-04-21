@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="todo-bg">
+
+<script>
+if (!localStorage.getItem("token")) {
+  window.location = "login.html";
+}
+</script>
+
+<div class="todo-container">
+
+  <h1>Todo App</h1>
+
+  <button class="logout-btn" onclick="logout()">Logout</button>
+
+  <div class="todo-input">
+    <input id="taskInput" placeholder="Enter your task...">
+    <button class="add-btn" onclick="addTodo()">Add</button>
+  </div>
+
+  <ul id="list"></ul>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
